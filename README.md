@@ -219,41 +219,41 @@ int main()
 
 {
 
-	double a,b,c,disc,realpart,imagpart,x1,x2;
+   double a,b,c,disc,realpart,imagpart,x1,x2;
   
-	scanf("%lf%lf%lf",&a,&b,&c);
+   scanf("%lf%lf%lf",&a,&b,&c);
   
-	if(a==0)
+  if(a==0)
   
-		printf("该方程不是二次方程");
+   printf("该方程不是二次方程");
     
-	else
+  else
   
-	{	
+   {	
   
   disc=b*b-4*a*c;
   
-	if(disc==0)
+   if(disc==0)
   
-		printf("has two eaual roots:%8.4f\n",-b/(2*a));
+   printf("has two eaual roots:%8.4f\n",-b/(2*a));
     
-	else
+   else
   
-	{	
+  {	
   
   if(disc<0)
   
-	{
+   {
   
   realpart=-b/(2*a);
   
-	imagpart=sqrt(-disc)/(2*a);
+   imagpart=sqrt(-disc)/(2*a);
   
-	printf("has comples roots:\n");
+   printf("has comples roots:\n");
   
-	printf("%8.4f+%8.4fi\n",realpart);
+   printf("%8.4f+%8.4fi\n",realpart);
   
-	printf("%8.4f-%8.4fi\n",imagpart);
+   printf("%8.4f-%8.4fi\n",imagpart);
   
   }
 	     
